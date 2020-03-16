@@ -11,7 +11,7 @@
  * @arg_list: va_list
  * Return: integer
  */
-int validate(const char *format, pter_l f_list[], va_list arg_list)
+int analyzer(const char *format, pter_l f_list[], va_list arg_list)
 {
 	int i, j, k_val, print_all;
 
