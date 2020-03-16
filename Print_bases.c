@@ -10,7 +10,7 @@ unsigned int n = 0, count = 0;
 int i = 0;
 
 n = va_arg(b,unsigned int);
-if (n == 0)
+if (n > 0)
 {
     write_c(n + '0');
     count ++;
@@ -35,7 +35,7 @@ return(count);
 
 int print_o(va_list o)
 {
-    unsigned int octal [8];
+    unsigned int octal [16];
     unsigned int n = 0, count = 0;
     int i;
 
