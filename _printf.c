@@ -16,17 +16,17 @@ int _printf(const char *format, ...)
 		{"i", print_i},
 		/*{"b", print_b},
 		{"r", print_r},
-		{"R", print_R},
+		{"R", print_R},*/
 		{"u", print_u},
 		{"o", print_o},
-		{"x", print_x},
+		/*{"x", print_x},
 		{"X", print_X},*/
 	};
 	va_list arg_list;
 	if (format == NULL)
 		return(-1);
 	va_start(arg_list, format);
-	save = validate(format, f_list, arg_list);
+	save = analyzer(format, f_list, arg_list);
 	va_end(arg_list);
 
 	return (save);
