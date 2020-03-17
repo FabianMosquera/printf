@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"i", print_i},
 		{"b", print_b},
-		/*{"r", print_r},
-		{"R", print_R},*/
+		{"r", print_r},
+		/*{"R", print_R},*/
 		{"u", print_u},
 		{"o", print_o},
 		{"x", print_x},
