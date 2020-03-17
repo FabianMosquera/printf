@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* _print_b - convert an integer to binary
+* @b: the list of arguments
+* Return: number of printed elment
+**/
+
 int print_b(va_list b)
 {
 unsigned int binary [32];
@@ -32,7 +38,11 @@ else
 return(count);
 }
 
-
+/**
+* _print_o - prints an octal
+* @o: the list of arguments
+* Return: number of printed characters
+*/
 int print_o(va_list o)
 {
     unsigned int octal [16];
@@ -62,9 +72,15 @@ else
 return(count);
 }
 
+/**
+* _print_X - prints input integer to an hexadecimal in uppercase
+* @X: the list of arguments
+* Return: number of printed characters
+*/
+
 int print_x(va_list x)
 {
-    unsigned int hex [20];
+    unsigned int hex [16];
     unsigned int n = 0, count = 0;
     int i;
 

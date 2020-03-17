@@ -22,6 +22,7 @@ int print_o(va_list);
 int print_d(unsigned int n);
 int print_number(va_list);
 int print_u(va_list);
+int print_x(va_list x);
 int print_unsigned_number(unsigned int n);
 int analyzer(const char *format, pter_l f_list[], va_list arg_list);
 #endif
