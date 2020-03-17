@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
-* _print_b - convert an integer to binary
+* print_b - convert an integer to binary
 * @b: the list of arguments
 * Return: number of printed elment
 **/
@@ -16,7 +16,7 @@ unsigned int n = 0, count = 0;
 int i = 0;
 
 n = va_arg(b,unsigned int);
-if (n > 0)
+if (n <= 1)
 {
     _putchar(n + '0');
     count ++;
@@ -29,7 +29,7 @@ else
         n = n / 2;
         i++;
     }
-    for (i = i-1; i>=0; i--)
+    for (i = i - 1; i >= 0; i--)
     {
         _putchar(binary[i] + '0');
         count++;
@@ -39,7 +39,7 @@ return(count);
 }
 
 /**
-* _print_o - prints an octal
+* print_o - prints an octal
 * @o: the list of arguments
 * Return: number of printed characters
 */
@@ -73,7 +73,7 @@ return(count);
 }
 
 /**
-* _print_X - prints input integer to an hexadecimal in uppercase
+* print_X - prints input integer to an hexadecimal in uppercase
 * @X: the list of arguments
 * Return: number of printed characters
 */
@@ -94,7 +94,7 @@ else
 {
    while (n > 0)
    {
-       if (n >= 10 && n <= 15)
+       if (n % 16 >= 10 && n % 16 <= 15)
        {
            hex[i] = 55 + n;
        }
@@ -105,7 +105,7 @@ else
        n = n/16;
        i++;
    }
-   for (--i; i>=0; i--)
+   for (--i; i >= 0; i--)
     {
         _putchar(hex[i]);
         count++;
