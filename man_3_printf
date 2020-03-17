@@ -1,0 +1,41 @@
+./"This is the manpage of the _printf project in Holberton School
+.TH _PRINTF 3 "16 march 2020" "0.10" "_printf man page"
+
+.SH NAME
+.B _printf
+- Formatted output conversion.
+.SH SYNOPSIS
+.B #include "holberton.h"
+.B int _printf(const char *
+.I format
+.B , ...)
+
+.SH DESCRIPTION
+.B _printf()
+Is interpretation of printf function that prints 
+.B format
+interpreting
+.B ‘%’
+directives to format numeric and string arguments in a way that is mostly similar to the
+.B C ‘printf’ function.
+.SH The conversion specifiers
+.IP %%
+prints a single %
+.IP %c
+prints the next argument of type Char (int argument is converted to a character)
+.IP %s
+prints the next argument of type Char * // pointer to a string
+.IP %i OR %d
+prints the next argument of type int
+.IP %b
+The unsigned int argument is converted to unsigned binary notation then printed
+.IP %u
+The unsigned int argument is converted to unsigned decimal notation then printed
+.IP %o
+The unsigned int argument is converted to unsigned octal notation then printed
+.SH SEE ALSO
+.I printf(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Andres Rodriguez,Ricky Fabian Mosquera
