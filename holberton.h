@@ -28,5 +28,4 @@ int print_unsigned_number(unsigned int n);
 int analyzer(const char *format, pter_l f_list[], va_list arg_list);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char reverse(char *c);
-int print_r(va_list);
 #endif
