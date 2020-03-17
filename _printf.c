@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 		{"R", print_R},*/
 		{"u", print_u},
 		{"o", print_o},
-		{"x", print_X},
+		{"x", print_x},
 		{"X", print_X},
 	};
 	va_list arg_list;
