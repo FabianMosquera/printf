@@ -7,7 +7,7 @@
  */
 int print_c(va_list list)
 {
-	write_c(va_arg(list, int));
+	_putchar(va_arg(list, int));
 	return (1);
 }
 
@@ -26,7 +26,7 @@ int print_s(va_list list)
 	if (ptr == NULL)
 		ptr = "(null)";
 	for (i = 0; ptr[i] != '\0'; i++)
-		write_c(ptr[i]);
+		_putchar(ptr[i]);
 	return (i);
 }
 /**
@@ -36,7 +36,7 @@ int print_s(va_list list)
  */
 int print_percent(__attribute__((unused))va_list list)
 {
-	write_c('%');
+	_putchar('%');
 	return (1);
 }
 /**

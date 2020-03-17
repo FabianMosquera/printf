@@ -35,8 +35,8 @@ int analyzer(const char *format, pter_l f_list[], va_list arg_list)
 			{
 				if (format[i + 1] != '\0')
 				{
-					write_c(format[i]);
-					write_c(format[i + 1]);
+					_putchar(format[i]);
+					_putchar(format[i + 1]);
 					print_all = print_all + 2;
 				}
 				else
@@ -46,7 +46,7 @@ int analyzer(const char *format, pter_l f_list[], va_list arg_list)
 		}
 		else
 		{
-			write_c(format[i]);
+			_putchar(format[i]);
 			print_all++;
 		}
 	}

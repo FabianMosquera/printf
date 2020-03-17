@@ -12,7 +12,7 @@ int i = 0;
 n = va_arg(b,unsigned int);
 if (n > 0)
 {
-    write_c(n + '0');
+    _putchar(n + '0');
     count ++;
 }
 else
@@ -25,7 +25,7 @@ else
     }
     for (i = i-1; i>=0; i--)
     {
-        write_c(binary[i] + '0');
+        _putchar(binary[i] + '0');
         count++;
     }
 }
@@ -42,7 +42,7 @@ int print_o(va_list o)
 n = va_arg(o,unsigned int);
 if (n == 0)
 {
-    write_c( 0 + '0');
+    _putchar( 0 + '0');
     count ++;
 }
 else
@@ -55,7 +55,7 @@ else
     }
     for (--i; i>=0; i--)
     {
-        write_c(octal[i] + '0');
+        _putchar(octal[i] + '0');
         count++;
     }
 }
@@ -64,14 +64,14 @@ return(count);
 
 int print_x(va_list x)
 {
-    unsigned int hex [16];
+    unsigned int hex [20];
     unsigned int n = 0, count = 0;
     int i;
 
 n = va_arg(x,unsigned int);
 if (n == 0)
 {
-    write_c( 0 + '0');
+    _putchar( 0 + '0');
     count ++;
 }
 else
@@ -91,7 +91,7 @@ else
    }
    for (--i; i>=0; i--)
     {
-        write_c(hex[i]);
+        _putchar(hex[i]);
         count++;
     } 
 }

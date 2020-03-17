@@ -12,7 +12,7 @@ struct pter
 typedef struct pter pter_l;
 
 int _printf(const char *format, ...);
-int write_c(char);
+int _putchar(char);
 int print_c(va_list);
 int print_s(va_list);
 int print_percent(va_list);
