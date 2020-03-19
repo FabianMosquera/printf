@@ -33,6 +33,10 @@ The unsigned int argument is converted to unsigned binary notation then printed
 The unsigned int argument is converted to unsigned decimal notation then printed
 .IP %o
 The unsigned int argument is converted to unsigned octal notation then printed
+.IP %x
+The unsigned int argument is converted to unsigned lowercase hexadecimal notation then printed
+.IP %X
+The unsigned int argument is converted to unsigned uppercase hexadecimal notation then printed
 .SH SEE ALSO
 .I printf(3)
 .SH BUGS
