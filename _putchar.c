@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _putchar_c - Function that writes the character c
+ * _putchar - Function that writes the character c
  * @c: char
  * Return: integer
  */

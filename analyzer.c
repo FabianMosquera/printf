@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * validate - Function that go through the different modules of the printf
+ * analyzer - Function that go through the different modules of the printf
  * @format: const char
  * @f_list: pter_l
  * @arg_list: va_list
